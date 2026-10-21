@@ -7,7 +7,7 @@ function iniciarAplicacao() {
     const dhUrl = process.env.DATABASE_URL;
      if (!apikey ) {
         console.error('Erro: A variável de ambiente API_URL_PAGAMENTO não está definida.')
-        process.exit(l);
+        process.exit(1);
     }  
     console.log ('=== SERVIDOR DE CONFIGURAÇÃO CARREGADO ===');
     console.log(`Servidor rodando na porta ${port}`);
